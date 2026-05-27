@@ -12,6 +12,10 @@ Program ini mengimplementasikan Algoritma Genetika (AG) sebagai pendekatan kompu
 
 ---
 
+## Konsep Dasar
+Algoritma Genetika bekerja dengan meniru mekanisme seleksi alam Darwin. Setiap solusi direpresentasikan sebagai **kromosom biner**, di mana nilai `1` berarti barang dipilih dan `0` berarti tidak dipilih. Populasi solusi kemudian "berevolusi" dari generasi ke generasi hingga ditemukan solusi terbaik.
+---
+
 ## Struktur File
 | File | Deskripsi |
 |---|---|
@@ -31,6 +35,23 @@ Program ini mengimplementasikan Algoritma Genetika (AG) sebagai pendekatan kompu
 4. **Crossover** - Dua parent dikombinasikan untuk menghasilkan keturunan baru
 5. **Mutasi** - Beberapa gen diubah secara acak untuk menghindari solusi yang stagnan
 6. **Generasi Baru** - Populasi lama digantikan oleh hasil keturunan generasi berikutnya
+
+---
+## Penjelasan Metode
+
+### Seleksi
+- **Roulette Wheel** — Peluang terpilih sebanding dengan nilai fitness individu
+- **Tournament** — Beberapa individu dibandingkan, yang terbaik yang menang
+
+### Crossover
+- **One-Point** — Kromosom dipotong di satu titik lalu ditukar
+- **Two-Point** — Kromosom dipotong di dua titik, bagian tengah ditukar
+- **Uniform** — Setiap gen dipilih berdasarkan mask acak
+
+### Mutasi
+- **Swap** — Dua posisi gen ditukar
+- **Inversion** — Urutan gen dalam segmen tertentu dibalik
+- **Uniform** — Gen dibalik nilainya dengan probabilitas tertentu
 
 ---
 
@@ -70,10 +91,26 @@ python main.py
 ---
 
 ## Hasil
-<img width="1366" height="655" alt="pertemuan 9_prak kb" src="https://github.com/user-attachments/assets/39017eea-232f-41de-90a9-5b098729aa37" />
 
 Output program terdiri dari dua bagian:
 - **Grafik** — Menampilkan perkembangan nilai fitness tertinggi, terendah, dan rata-rata dari setiap generasi
 - **Terminal** — Menampilkan barang-barang yang terpilih beserta total nilai dan bobot terbaik
 
- Karena AG menggunakan proses acak, hasil yang muncul bisa berbeda setiap kali program dijalankan. Hal ini merupakan karakteristik alami dari algoritma evolusioner.
+### Grafik Perkembangan Fitness
+<img width="1366" height="655" alt="pertemuan 9_prak kb" src="https://github.com/user-attachments/assets/39017eea-232f-41de-90a9-5b098729aa37" />
+
+- 🔵 **Biru** — Nilai fitness tertinggi per generasi
+- 🔴 **Merah** — Nilai fitness rata-rata per generasi  
+- 🟡 **Kuning** — Nilai fitness terendah per generasi
+- ⚫ **Abu-abu** — Sebaran nilai fitness seluruh individu
+
+### Output Terminal
+Nilai Fitness Terbaik: ...
+Total Bobot: ...
+Barang Terpilih:
+
+Barang...
+
+> Setiap run menghasilkan output berbeda karena sifat acak AG. Ini adalah karakteristik alami algoritma evolusioner, bukan kesalahan program.
+
+Karena AG menggunakan proses acak, hasil yang muncul bisa berbeda setiap kali program dijalankan. Hal ini merupakan karakteristik alami dari algoritma evolusioner.
