@@ -14,6 +14,7 @@ Program ini mengimplementasikan Algoritma Genetika (AG) sebagai pendekatan kompu
 
 ## Konsep Dasar
 Algoritma Genetika bekerja dengan meniru mekanisme seleksi alam Darwin. Setiap solusi direpresentasikan sebagai **kromosom biner**, di mana nilai `1` berarti barang dipilih dan `0` berarti tidak dipilih. Populasi solusi kemudian "berevolusi" dari generasi ke generasi hingga ditemukan solusi terbaik.
+
 ---
 
 ## Struktur File
