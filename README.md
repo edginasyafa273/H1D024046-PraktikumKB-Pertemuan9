@@ -98,7 +98,7 @@ Output program terdiri dari dua bagian:
 - **Terminal** — Menampilkan barang-barang yang terpilih beserta total nilai dan bobot terbaik
 
 ### Grafik Perkembangan Fitness
-<img width="1366" height="655" alt="pertemuan 9_prak kb" src="https://github.com/user-attachments/assets/39017eea-232f-41de-90a9-5b098729aa37" />
+<img width="1366" height="655" alt="pertemuan 9_prak kb" src="https://github.com/user-attachments/assets/6096a249-22a6-4572-8684-4e734af62a9f" />
 
 - 🔵 **Biru** — Nilai fitness tertinggi per generasi
 - 🔴 **Merah** — Nilai fitness rata-rata per generasi  
@@ -106,11 +106,17 @@ Output program terdiri dari dua bagian:
 - ⚫ **Abu-abu** — Sebaran nilai fitness seluruh individu
 
 ### Output Terminal
-Nilai Fitness Terbaik: ...
-Total Bobot: ...
+Nilai Fitness:
+Individu 1: Fitness = 0
+Individu 2: Fitness = 190
+Individu 3: Fitness = 230
+Nilai Fitness Terbaik: 334
+Total Bobot: 48
 Barang Terpilih:
-Barang...
+-Barang5
+-Barang6
+-Barang7
+-Barang8
 
 > Setiap run menghasilkan output berbeda karena sifat acak AG. Ini adalah karakteristik alami algoritma evolusioner, bukan kesalahan program.
 
-Karena AG menggunakan proses acak, hasil yang muncul bisa berbeda setiap kali program dijalankan. Hal ini merupakan karakteristik alami dari algoritma evolusioner.
