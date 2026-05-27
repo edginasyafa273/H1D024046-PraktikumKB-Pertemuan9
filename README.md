@@ -62,8 +62,11 @@ Program ini mengimplementasikan Algoritma Genetika (AG) sebagai pendekatan kompu
 
 ## Cara Menjalankan
 1. Clone repositori ini
-2. Install library yang dibutuhkan
-3. Jalankan program utama
+git clone https://github.com/edginasyafa273/H1D024046-PraktikumKB-Pertemuan9.git
+3. Install library yang dibutuhkan
+pip install matplotlib numpy
+5. Jalankan program utama
+python main.py
 ---
 
 ## Hasil
