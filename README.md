@@ -67,6 +67,7 @@ Program ini mengimplementasikan Algoritma Genetika (AG) sebagai pendekatan kompu
 ---
 
 ## Hasil
+<img width="1366" height="655" alt="pertemuan 9_prak kb" src="https://github.com/user-attachments/assets/39017eea-232f-41de-90a9-5b098729aa37" />
 
 Output program terdiri dari dua bagian:
 - **Grafik** — Menampilkan perkembangan nilai fitness tertinggi, terendah, dan rata-rata dari setiap generasi
